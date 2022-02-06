@@ -1,0 +1,5 @@
+a=8 b=3 c=0 d=128
+Score=1270/1485
+Training Accuracy=0.8686279058456421
+Training Loss=0.2688431143760681
+Epochs=41
