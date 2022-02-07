@@ -46,18 +46,19 @@ for i in range(length):
   ID=int(file_name_array[i][:-19])
   print(str(i+1)+'/'+str(length))
   for j in range(len(table)):
-            if round(table[j][0])==ID:
-              SFR=table[j][9]
-              M=table[j][8]*10**10
-              sSFR=SFR/M
-              label=0
-              if sSFR>=10**-11:
-                label=1
-  test_ID.append(ID)
-  test_M.append(M)
-  test_sSFR.append(sSFR)
-  test_data.append(data)
-  test_labels.append(label)
+    if round(table[j][0])==ID:
+      SFR=10**table[j][15]
+      M=10**table[j][14]              
+      sSFR=SFR/M
+      label=0
+      if sSFR>=10**-11:
+        label=1
+      test_ID.append(ID)
+      test_M.append(M)
+      test_sSFR.append(sSFR)
+      test_data.append(data)
+      test_labels.append(label)
+      break
   hdu.close()
   del data
 test_ds = tf.data.Dataset.from_tensor_slices((np.array(test_data), np.array(test_labels)))
@@ -78,7 +79,7 @@ for i in range(len(test_data)):
   score = tf.nn.softmax(predictions[0])
   ID=test_ID[i]
   M=test_M[i]
-  sSFR==test_sSFR[i]
+  sSFR=test_sSFR[i]
   if test_labels[i]==1:
     imgclass='Above'
   else:
