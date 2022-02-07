@@ -1,3 +1,5 @@
 Masters project repositary for Jarpreet and Will
 
-TestResults.png shows the current results of applying teh trained netwrk to SDSS images
+TestResults.png shows the current results of applying the trained netwrk to SDSS images
+
+SDSS_PLot shows all the images in the sdss image table 
