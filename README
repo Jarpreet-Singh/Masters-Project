@@ -1,5 +1,5 @@
 Masters project repositary for Jarpreet and Will
 
-TestResults.png shows the current results of applying the trained netwrk to SDSS images
+TestResults.png shows the current results of applying the trained netwrk to SDSS images. 2828/7472 images were correctly predicted
 
 SDSS_PLot shows all the images in the sdss image table 
