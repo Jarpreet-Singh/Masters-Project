@@ -20,7 +20,7 @@ from numpy import savetxt
 
 #Important paths
 table_path = 'SDSS_image_table.fits'
-images_path = '/c4/smcgee/project_data/SDSS_images_for_CNN/sdss_images'
+images_path = '/c4/wfh842/sdss_images'
 model_path =  'CNNmodelV1.10' 
 write_path = '/home/wfh842'  
 
@@ -46,7 +46,7 @@ for i in range(length):
   ID=int(file_name_array[i][:-19])
   print(str(i+1)+'/'+str(length))
   for j in range(len(table)):
-    if round(table[j][0])==ID:
+    if round(table[j][1])==ID:
       SFR=10**table[j][15]
       M=10**table[j][14]              
       sSFR=SFR/M
