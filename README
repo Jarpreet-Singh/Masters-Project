@@ -1,6 +1,6 @@
 Masters project repositary for Jarpreet and Will
 
-Model was trained using CNN_V2.4.py on simulated data and SDSS images were fed in using SDSS_image_classifier. A score of 6713/10269 was obtained. 
+Model was trained using CNN_V2.4.py on simulated data and SDSS images were fed in using SDSS_image_classifier. A score of 6713/10269 was obtained (See testResults.png). 
 Simulated images were augmented using imageprocessor.py and SDSS images were masked using image_masker.py
 
 SDSS_PLot shows all the images in the sdss image table 
