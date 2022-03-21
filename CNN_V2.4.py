@@ -73,9 +73,9 @@ num_classes = 2
 
 
 def build_model(hp):
-    a=units = hp.Int("units", min_value=2, max_value=16, step=2)
-    b=units = hp.Int("units", min_value=2, max_value=4, step=1)
-    d=units = hp.Int("units", min_value=64, max_value=256, step=64)
+    a=units = hp.Int("units_a", min_value=2, max_value=16, step=2)
+    b=units = hp.Int("units_b", min_value=2, max_value=4, step=1)
+    d=units = hp.Int("units_d", min_value=64, max_value=256, step=64)
     model = Sequential([
       layers.Rescaling(1, input_shape=(img_size, img_size,1)),
       layers.Conv2D(a, b, padding='same', activation='relu'),
