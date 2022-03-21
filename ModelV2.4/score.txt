@@ -1,0 +1,4 @@
+Score=1302/1485
+Training Accuracy=0.8960251808166504
+Training Loss=0.2240511029958725
+Epochs=8
