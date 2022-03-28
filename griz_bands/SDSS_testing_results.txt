@@ -1,0 +1,4 @@
+Score=999/1154
+Estimated quenching fraction:0.5251299826689775
+Actual quenching fraction:0.5
+[485, 514, 92, 63]
